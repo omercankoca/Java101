@@ -3,7 +3,7 @@ import java.lang.Math;
 
 public class HipotenusHesaplama {
     public static void main(String[] args) {
-        double aKenari,bKenari,cKenari;
+        double aKenari,bKenari,hipotenus ;
 
         Scanner input = new Scanner(System.in);
 
@@ -12,9 +12,8 @@ public class HipotenusHesaplama {
         System.out.print("İkinci kenarı giriniz : ");
         bKenari = input.nextDouble();
 
-        cKenari = Math.sqrt((aKenari*aKenari) + (bKenari * bKenari));
+        hipotenus = Math.sqrt((aKenari * aKenari) + (bKenari * bKenari));
 
-        System.out.println("Hipotenüs değeri : " + cKenari);
-
+        System.out.println("Hipotenüs değeri : " + hipotenus);
     }
 }
