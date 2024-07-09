@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class KDVHesaplayici {
     public static void main(String[] args) {
-        double KDVtutari, tutarWKDV, tutar, KDVkatSayisi = 0.18;
+        double KDVtutari, tutarWKDV, tutar, KDVkatSayisi;
         Scanner input = new Scanner (System.in);
 
         System.out.print("Tutarı giriniz : ");
         tutar = input.nextDouble();
+
+        KDVkatSayisi = (tutar>=1000) ? 0.08 : 0.18;
 
         KDVtutari = tutar * KDVkatSayisi;
         tutarWKDV = tutar + KDVtutari;
