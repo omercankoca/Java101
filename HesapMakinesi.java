@@ -17,9 +17,11 @@ public class HesapMakinesi {
             System.out.print("İkinci sayıyı giriniz : ");
             n2 = input.nextInt();
 
+            int result;
+
             switch (select) {
                 case 1:
-                    int result = n1 + n2;
+                    result = n1 + n2;
                     System.out.println("Toplama sonucunuz : " + result);
                     break;
                 case 2:
