@@ -18,16 +18,13 @@ public class PrimeNumberRecursive {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
-        // Kullanıcıdan bir sayı al
-        System.out.print("Bir sayı girin: ");
+        System.out.print("Enter a number ");
         int number = scanner.nextInt();
 
-        // Sayının asal olup olmadığını kontrol et
         if (IsPrime(number, 2)) {
-            System.out.println(number + " bir asal sayıdır.");
+            System.out.println(number + " is a prime number");
         } else {
-            System.out.println(number + " bir asal sayı değildir.");
+            System.out.println(number + " is not a prime number.");
         }
 
     }
