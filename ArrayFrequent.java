@@ -1,7 +1,7 @@
 public class ArrayFrequent {
-    static boolean isFind(int[] arr, int value){
-        for (int i : arr){
-            if (i == value){
+    static boolean isFind(int[] arr, int value) {
+        for (int i : arr) {
+            if (i == value) {
                 return true;
             }
         }
@@ -15,7 +15,7 @@ public class ArrayFrequent {
 
         for (int i = 0; i < list.length; i++) {
 
-            if (!isFind(checkedList, list[i])){
+            if (!isFind(checkedList, list[i])) {
                 int sum = 0;
                 int frequent = 0;
                 for (int j = 0; j < list.length; j++) {
@@ -29,7 +29,6 @@ public class ArrayFrequent {
                 checkedList[checkIndex++] = list[i];
                 System.out.println(list[i] + " sayısı " + frequent + " kere tekrar etti.");
             }
-
 
         }
     }
