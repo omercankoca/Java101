@@ -15,7 +15,7 @@ public class MineSweeper {
     }
 
     public void run() {
-        int r, c;
+        int r, c,tempc,tempr;
         int succes = 0;
         print(gameMap);
         System.out.println("Oyun başladı");
@@ -23,9 +23,12 @@ public class MineSweeper {
         while (game) {
             print(userMap);
             System.out.print("Satır : ");
-            r = input.nextInt();
+            tempr = input.nextInt();
             System.out.print("Sütun : ");
-            c = input.nextInt();
+            tempc = input.nextInt();
+
+            c = tempc-1;
+            r = tempr-1;
 
             if (r < 0 || r >= row || c < 0 || c >= col) {
                 System.out.println("Geçersiz kordinat!!.");
